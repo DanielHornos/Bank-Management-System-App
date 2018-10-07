@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userPanels.userBalanceSheetPanel.UserBalanceSheetPanel">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="600.0" prefWidth="1024.0">
+         <children>
+            <Label layoutX="370.0" text="BALANCE SHEET">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableview" layoutX="40.0" layoutY="178.0" prefHeight="405.0" prefWidth="961.0" />
+            <Button layoutX="457.0" layoutY="131.0" mnemonicParsing="false" onAction="#actionForShowButton" text="Show Account Balance" />
+            <TextField fx:id="account" editable="false" layoutX="212.0" layoutY="65.0" opacity="0.25" />
+            <Separator layoutX="521.0" layoutY="52.0" orientation="VERTICAL" prefHeight="66.0" prefWidth="4.0" />
+            <DatePicker fx:id="dateTO" layoutX="704.0" layoutY="111.0" />
+            <Label layoutX="620.0" layoutY="117.0" text="TO:" />
+            <Label layoutX="620.0" layoutY="68.0" text="FROM:" />
+            <DatePicker fx:id="dateFROM" layoutX="704.0" layoutY="62.0" />
+            <Label layoutX="64.0" layoutY="70.0" text="Account Number:" />
+            <Label layoutX="64.0" layoutY="117.0" text="Balance" />
+            <TextField fx:id="balance" editable="false" layoutX="212.0" layoutY="112.0" opacity="0.25" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

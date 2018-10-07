@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminPanels.TransferPanel.TransferPanel">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="1024.0">
+         <children>
+            <TextField fx:id="account1" layoutX="255.0" layoutY="119.0" />
+            <TextField fx:id="ownerAccount1" editable="false" layoutX="255.0" layoutY="189.0" opacity="0.25">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <Label layoutX="55.0" layoutY="124.0" text="Account1" />
+            <Label layoutX="55.0" layoutY="194.0" text="Owner Name Account1" />
+            <Button layoutX="434.0" layoutY="506.0" mnemonicParsing="false" onAction="#actionForConfirmTransferButton" text="Confirm Transfer" />
+            <TextField fx:id="balanceAccount1" editable="false" layoutX="255.0" layoutY="259.0" opacity="0.25">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <Label layoutX="55.0" layoutY="264.0" text="Balance Account1" />
+            <Label layoutX="50.0" layoutY="20.0" text="MONEY TRANSFER BETWEEN ACCOUNTS">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="425.0" text="Transfer Amount from Account1 to Account2" />
+            <TextField fx:id="transferAmount" layoutX="593.0" layoutY="419.0" />
+            <Button layoutX="449.0" layoutY="335.0" mnemonicParsing="false" onAction="#actionForShowDetailsButton" text="Show Details" />
+            <Label layoutX="842.0" layoutY="425.0" text="PLN" />
+            <Label layoutX="551.0" layoutY="264.0" text="Balance Account2" />
+            <TextField fx:id="balanceAccount2" editable="false" layoutX="751.0" layoutY="259.0" opacity="0.25">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="551.0" layoutY="194.0" text="Owner Name Account2" />
+            <Label layoutX="551.0" layoutY="124.0" text="Account2" />
+            <TextField fx:id="ownerAccount2" editable="false" layoutX="746.0" layoutY="189.0" opacity="0.25">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="account2" layoutX="751.0" layoutY="119.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
