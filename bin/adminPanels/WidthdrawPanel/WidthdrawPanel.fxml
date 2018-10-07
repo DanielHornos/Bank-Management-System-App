@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminPanels.WidthdrawPanel.WidthdrawPanel">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="1024.0">
+         <children>
+            <TextField fx:id="account" layoutX="376.0" layoutY="119.0" />
+            <TextField fx:id="name" editable="false" layoutX="376.0" layoutY="189.0" opacity="0.25">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <Label layoutX="176.0" layoutY="124.0" text="Enter Account Number" />
+            <Label layoutX="176.0" layoutY="194.0" text="Name" />
+            <Button layoutX="420.0" layoutY="502.0" mnemonicParsing="false" onAction="#actionForConfirmWidthdrawButton" text="Confirm Widthdraw" />
+            <TextField fx:id="balance" editable="false" layoutX="376.0" layoutY="259.0" opacity="0.25">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+            <Label layoutX="176.0" layoutY="264.0" text="Balance" />
+            <Label layoutX="50.0" layoutY="20.0" text="MONEY WIDTHDRAW">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="176.0" layoutY="404.0" text="Widthdraw Amount" />
+            <TextField fx:id="widthdrawAmount" layoutX="376.0" layoutY="399.0" />
+            <Label layoutX="176.0" layoutY="334.0" text="Mode" />
+            <Button layoutX="722.0" layoutY="119.0" mnemonicParsing="false" onAction="#actionForShowDetailsButton" text="Show Details" />
+            <ComboBox fx:id="comboBox" layoutX="376.0" layoutY="329.0" prefHeight="39.0" prefWidth="224.0" />
+            <Label layoutX="618.0" layoutY="404.0" text="PLN" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

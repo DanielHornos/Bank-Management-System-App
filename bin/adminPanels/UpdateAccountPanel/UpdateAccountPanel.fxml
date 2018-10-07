@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminPanels.UpdateAccountPanel.UpdateAccountPanel">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="600.0" prefWidth="1024.0">
+         <children>
+            <TextField fx:id="id" editable="false" layoutX="250.0" layoutY="250.0" />
+            <TextField fx:id="name" layoutX="250.0" layoutY="300.0" />
+            <TextField fx:id="dni" layoutX="250.0" layoutY="350.0" />
+            <TextField fx:id="nationality" layoutX="250.0" layoutY="450.0" />
+            <Label layoutX="50.0" layoutY="255.0" text="Account Number" />
+            <Label layoutX="50.0" layoutY="305.0" text="Name" />
+            <Label layoutX="50.0" layoutY="405.0" text="Date of Birth" />
+            <Label layoutX="50.0" layoutY="355.0" text="ID Number" />
+            <Label layoutX="50.0" layoutY="455.0" text="Nationality" />
+            <Label layoutX="50.0" layoutY="505.0" text="Address" />
+            <TextField fx:id="address" layoutX="250.0" layoutY="500.0" />
+            <Button layoutX="60.0" layoutY="550.0" mnemonicParsing="false" onAction="#actionForUpdateButton" text="Update Account" />
+            <RadioButton fx:id="rbMale" layoutX="712.0" layoutY="330.0" mnemonicParsing="false" text="Male" />
+            <Label layoutX="550.0" layoutY="330.0" text="Gender" />
+            <RadioButton fx:id="rbFemale" layoutX="837.0" layoutY="330.0" mnemonicParsing="false" text="Female" />
+            <RadioButton fx:id="rbUnmarried" layoutX="837.0" layoutY="360.0" mnemonicParsing="false" text="UnMarried" />
+            <Label layoutX="550.0" layoutY="360.0" text="Marital Status" />
+            <RadioButton fx:id="rbMarried" layoutX="712.0" layoutY="360.0" mnemonicParsing="false" text="Married" />
+            <TextField fx:id="balance" layoutX="736.0" layoutY="500.0" />
+            <Label layoutX="550.0" layoutY="505.0" text="Balance" />
+            <Label layoutX="550.0" layoutY="455.0" text="Telephone" />
+            <Label layoutX="550.0" layoutY="405.0" text="Email" />
+            <TextField fx:id="telephone" layoutX="736.0" layoutY="450.0" />
+            <TextField fx:id="email" layoutX="736.0" layoutY="400.0" />
+            <Label layoutX="50.0" layoutY="20.0" text="CUSTOMER INFORMATION FORM">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateOfBirth" layoutX="250.0" layoutY="400.0" prefHeight="39.0" prefWidth="224.0" />
+            <Separator layoutX="51.0" layoutY="236.0" prefHeight="7.0" prefWidth="715.0" />
+            <TableView fx:id="tableview" layoutX="40.0" layoutY="70.0" onMouseClicked="#actionForSelectedRow" prefHeight="159.0" prefWidth="952.0" />
+            <Button layoutX="795.0" layoutY="550.0" mnemonicParsing="false" onAction="#actionForSearchButton" text="Search" />
+            <TextField fx:id="search" layoutX="550.0" layoutY="550.0" onAction="#actionForSearchButton" />
+            <Label layoutX="276.0" layoutY="556.0" text="Search by:" />
+            <ComboBox fx:id="comboBox" layoutX="370.0" layoutY="550.0" prefWidth="150.0" />
+            <Button layoutX="821.0" layoutY="30.0" mnemonicParsing="false" onAction="#actionForRefreshButton" text="Show All Accounts" textFill="#0f21dd" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

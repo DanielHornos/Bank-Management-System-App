@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminPanels.AdminPanel.AdminPanelController">
+   <children>
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Account">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#actionForAddAccountButton" text="Add Account" />
+                        <MenuItem mnemonicParsing="false" onAction="#actionForUpdateAccountButton" text="Update Account" />
+                        <MenuItem mnemonicParsing="false" onAction="#actionForAllUsersButton" text="All Accounts" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Transactions">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#actionForWidthdrawButton" text="Widthdraw" />
+                        <MenuItem mnemonicParsing="false" onAction="#actionForDepositButton" text="Deposit" />
+                        <MenuItem mnemonicParsing="false" onAction="#actionForTransferButton" text="Transfer" />
+                     </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Others">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#actionForBalanceSheetButton" text="Balance Sheet" />
+                        <MenuItem mnemonicParsing="false" onAction="#actionForChangePasswordButton" text="Change Password" />
+                        <MenuItem mnemonicParsing="false" onAction="#actionForExitButton" text="Exit" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#actionForAboutButton" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="821.0" fitWidth="1305.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../../Documents/JAVA/Banking%20software%20Project/Icons/tile_PigBankCoin.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="39.0" layoutY="40.0" mnemonicParsing="false" onAction="#actionForAddAccountButton" prefHeight="130.0" prefWidth="150.0" text="ADD ACCOUNT" />
+                  <Button layoutX="357.0" layoutY="40.0" mnemonicParsing="false" onAction="#actionForUpdateAccountButton" prefHeight="130.0" prefWidth="150.0" text="UPDATE &#10;ACCOUNT" />
+                  <Button layoutX="679.0" layoutY="40.0" mnemonicParsing="false" onAction="#actionForAllUsersButton" prefHeight="130.0" prefWidth="150.0" text="ALL ACCOUNTS" />
+                  <Button layoutX="679.0" layoutY="196.0" mnemonicParsing="false" onAction="#actionForTransferButton" prefHeight="130.0" prefWidth="150.0" text="TRANSFER" />
+                  <Button layoutX="357.0" layoutY="196.0" mnemonicParsing="false" onAction="#actionForDepositButton" prefHeight="130.0" prefWidth="150.0" text="DEPOSIT" />
+                  <Button layoutX="39.0" layoutY="196.0" mnemonicParsing="false" onAction="#actionForWidthdrawButton" prefHeight="130.0" prefWidth="150.0" text="WITHDRAW" />
+                  <Button layoutX="677.0" layoutY="375.0" mnemonicParsing="false" onAction="#actionForAboutButton" prefHeight="130.0" prefWidth="150.0" text="ABOUT" />
+                  <Button layoutX="355.0" layoutY="375.0" mnemonicParsing="false" onAction="#actionForChangePasswordButton" prefHeight="130.0" prefWidth="150.0" text="  CHANGE &#10;PASSWORD" />
+                  <Button layoutX="37.0" layoutY="375.0" mnemonicParsing="false" onAction="#actionForExitButton" prefHeight="130.0" prefWidth="150.0" text="EXIT" />
+                  <Button layoutX="1003.0" layoutY="196.0" mnemonicParsing="false" onAction="#actionForBalanceSheetButton" prefHeight="130.0" prefWidth="150.0" text="BALANCE&#10;  SHEET" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
